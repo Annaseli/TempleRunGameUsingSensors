@@ -61,8 +61,7 @@ public class playermovement : MonoBehaviour
         }
         else
         {
-            readFromPortInt = -2;
-            UnityEngine.Debug.Log($"false: {readFromPortInt}");
+            readFromPortInt = -2;           
         }
         return readFromPortInt;
     }
@@ -172,7 +171,7 @@ public class playermovement : MonoBehaviour
                 }
                 else
                 {
-                    UnityEngine.Debug.Log("fast!");
+                    // fast pace
                     return 4;
                 }
             }
@@ -270,7 +269,6 @@ public class playermovement : MonoBehaviour
         }
         else if (readFromPortInt == 4)
         {
-            UnityEngine.Debug.Log("fast IN 4!!!!!!");
             if (playerPosition == 0) // if the player is on the left side
                 transform.Translate(MoveDistance, 0, 0);
             else if (playerPosition == 2) // if the player is on the right side
