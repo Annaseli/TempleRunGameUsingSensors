@@ -1,6 +1,6 @@
 # TempleRunGameUsingSensors
-A Temple-Run-like game in which the avatar's transitions between lanes in the game are made by data streamed 
-from FSR sensors.
+A Temple-Run-like game in which The transitions of the avatar between lanes in the game are made 
+based on the data streamed from FSR sensors
 
 Authors: Anna Seliverstov, Nitzan Nahshon
 
@@ -21,8 +21,9 @@ intensity on both legs while walking.
 The project consists of a physical and a virtual part. 
 
 The physical part consists of 2 touch sensors (FSR) attached to the child's feet that are connected to an 
-Arduino hardware component. The Arduion is placed in 3-D pronted container that we designed and printed. 
-The child attaches the container to his pants. The Arduino is also connected to the computer.
+Arduino hardware component. The Arduion is placed in 3D printed container that we designed using
+the Rhino program and printed using PrusaSlicer program and a 3D printer. 
+The container is attached to the child's pants and is connected to the computer.
 
 The virtual part is a Temple Run-like game. 
 The child plays a Temple Run-like game on a computer, where the avatar's movements in the game depend on 
@@ -33,23 +34,22 @@ If the child walks long enough in a balanced way, he rises to the next level in 
 
 The sensors are used to identify the child's gait and speed, which are processed by the Arduino 
 and the game code to control the avatar's movements. The Arduino streams the sensor's data to the game 
-in real time, The data is being processed, engineered and analyzed to gain the most accurate and fast 
-response to determine the avatar's movements. 
+in real time. The data undergoes processing, engineering, and analysis to achieve a highly precise and 
+rapid determination of the avatar's movements.
 
 We programmed a software for the Arduino in the INO file. 
 The INO file is a software program created for use with Arduino. It contains source code written in the 
-Arduino programming language (which is a variant of C++). INO files are used to control Arduino circuit 
-boards. 
+Arduino programming language (which is a variant of C++). 
 
-The program combines the Aeduino software that reads data from the FSR sensors and the game code that 
-analyzes it in real-time to determine whether the child has started walking. The data is then processed 
-and outputted through a Serial objectin a specific format.
+The program combines the Arduino software that reads data from the FSR sensors and streames it to the game. 
+The data is processed and outputted through a Serial object in a specific format.
+The game code analyzes it in real-time to determine whether the child has started walking. 
 
 To create the game, we adapted a basic open-source Temple-Run game by adjusting the avatar's lanes to have
 three options to run and changing the position of the coins to appear in the middle lane. We also extended
-the game time so that the child can transition to the next stage only after walking in a balanced manner
+the game time so that the child can transition to the next level only after walking in a balanced manner
 for enough time. We altered the triggers for transitioning between lanes so that the game responds to the
-real-time analysis of information transmitted from the sensors attached to the child's feet. In contrast
+real-time analysis of data streamed from the sensors attached to the child's feet. In contrast
 to the original game, in which transitions are made by pressing the arrow keys on the keyboard, our game
 uses the sensor data to determine when to transition between lanes.
 
