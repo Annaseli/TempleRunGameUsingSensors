@@ -1,16 +1,17 @@
-# TempleRunGameUsingSensors
+A Temple Run Like Game that Uses Sensors for Movement Manipulation
+=========
+
+### Authors: Anna Seliverstov, Nitzan Nahshon
+
+--------------------------------------------------------------
+
+Demo Video: https://www.youtube.com/watch?v=nUPt6BKYqKY&t=6s
+
+--------------------------------------------------------------
+
+
 A Temple-Run-like game in which The transitions of the avatar between lanes in the game are made 
-based on the data streamed from FSR sensors
-
-Authors: Anna Seliverstov, Nitzan Nahshon
-
-
-
-Demo video:
-https://www.youtube.com/watch?v=nUPt6BKYqKY&t=6s
-
-
-
+based on the data streamed from FSR sensors.
 
 A final project in the HCI course at the Hebrew University of Jerusalem.
 The project was made as a donation for the ALYN Hospital in Jerusalem, which specializes in rehabilitating 
